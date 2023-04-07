@@ -1,26 +1,17 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { Container } from 'react-bootstrap';
+import Navbar from "./Navbar.js"
 
 function Layout(props) {
-
   return(
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Resume">Resume</Link>
-          </li>
-          <li>
-            <Link to="/instructions">Instructions</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Outlet />
+      <Navbar />
+      
+      <Container id="content" className="p-5">
+        <Outlet />
+      </Container>
     </>
-  )
+  );
 }
 
 export default Layout;
