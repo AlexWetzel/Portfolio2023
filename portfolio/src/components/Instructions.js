@@ -1,6 +1,6 @@
 function Instructions() {
   return(
-    <p id="instructions">
+    <p id="instructions" className="mt-5 mb-5">
       <h2>Installing Mods For Monster Hunter Rise</h2>
       <br />
       <h4>Disclaimer</h4>
