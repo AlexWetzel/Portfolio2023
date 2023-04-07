@@ -3,11 +3,11 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 function Layout(props) {
   return(
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" fixed="top">
       <Container>
         <Navbar.Brand>Alexander Wetzel</Navbar.Brand>
         <Nav className="me-auto">
-          <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+          <Link class="nav-link" to="/">Home</Link>
           <Link class="nav-link" to="/resume">Resume</Link>
           <Link class="nav-link" to="/instructions">Instructions</Link>
           <Link class="nav-link disabled" to="/proposal">Proposal</Link>

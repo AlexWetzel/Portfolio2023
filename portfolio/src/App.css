@@ -2,6 +2,13 @@
   background-color: white;
 }
 
+#resume h4, .center-text {
+  text-align: center;
+}
+
+#technical-skills div {
+  text-align: center;
+}
 
 
 /* .App {

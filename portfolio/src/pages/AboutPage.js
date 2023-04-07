@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 
-function About() {
+function AboutPage() {
 
   return(
     <>
@@ -12,4 +12,4 @@ JavaScript is my specialty. I'm experienced with frameworks such as React and An
   )
 }
 
-export default About;
+export default AboutPage;
