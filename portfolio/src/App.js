@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import About from "./pages/About.js";
 import Instructions from "./pages/Instructions.js";
 import Proposal from "./pages/Proposal.js";
@@ -8,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<About />} />
@@ -17,7 +18,7 @@ function App() {
           <Route path="Proposal" element={<Proposal />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
