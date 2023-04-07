@@ -6,9 +6,9 @@ function Layout(props) {
   return(
     <>
       <Navbar />
-
-      
       <Container id="content" className="p-5">
+        <br />
+        <br />
         <br />
         <br />
         <Outlet />
