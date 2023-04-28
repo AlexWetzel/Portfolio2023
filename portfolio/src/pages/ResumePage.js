@@ -2,11 +2,14 @@ import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import Resume from "../components/Resume.js";
 import CoverLetter from "../components/CoverLetter.js";
 import Explanation from "../components/Explanation.js";
+import pdf from "../files/Alexander Wetzel - Cover Letter - Resume.pdf";
 
 function ResumePage() {
   return (
     <>
       <h1>Writing Example: Resume and Cover Letter</h1>
+      <br />
+      <p className="document-link"><b>Document link - </b><a href={pdf} target = "_blank">Instructions.pdf</a></p>
       <Explanation>
         <p>
           The purpose of this assignment was to choose a job listing and craft a 
@@ -28,7 +31,7 @@ function ResumePage() {
         </p>
       </Explanation>
       <br />
-      <Tabs
+      {/* <Tabs
         defaultActiveKey="resume"
         id="justify-tab-example"
         className="mb-3"
@@ -48,7 +51,7 @@ function ResumePage() {
             </Col>
           </Row>
         </Tab>   
-      </Tabs>
+      </Tabs> */}
     </>
   );
 }

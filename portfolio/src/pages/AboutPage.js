@@ -4,8 +4,9 @@ function AboutPage() {
   return(
     <>
       <h1>About Me</h1>
-      <Row>
-        <Col xl={{ span: 8, offset: 2 }}>
+      <br />
+      {/* <Row>
+        <Col xl={{ span: 8, offset: 2 }}> */}
           <p>
             
           </p>
@@ -66,8 +67,8 @@ function AboutPage() {
             in this language.
           </p>
           <br />
-        </Col>
-      </Row>
+        {/* </Col>
+      </Row> */}
     </>
   )
 }

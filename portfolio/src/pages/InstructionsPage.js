@@ -1,11 +1,14 @@
 import { Row, Col } from 'react-bootstrap';
 import Instructions from '../components/Instructions';
 import Explanation from '../components/Explanation';
+import pdf from "../files/Project 1 - Instructions - Alexander Wetzel.pdf"
 
 function InstructionsPage() {
   return(
     <div>
       <h1>Writing Sample: Instructions</h1>
+      <br />
+      <p className="document-link"><b>Document link - </b><a href={pdf} target = "_blank">Instructions.pdf</a></p>
       <Explanation>
         <p>
           The purpose of this assignment was to identify a process, break it down into 
@@ -27,12 +30,17 @@ function InstructionsPage() {
         </p>
       </Explanation>
       <br />
-      <hr />
-      <Row>
+      {/* <a href={pdf} target = "_blank">Instructions.pdf</a> */}
+      {/* <object data={pdf} type="application/pdf" width="100%" height="4000px"> */}
+ {/* </object> */}
+ {/* <embed src={pdf} width="100%" height="2100px" /> */}
+      {/* <hr /> */}
+      {/* <Row>
         <Col xl={{ span: 8, offset: 2 }}>
           <Instructions />
+
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 }
